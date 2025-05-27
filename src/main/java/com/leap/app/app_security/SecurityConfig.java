@@ -42,7 +42,7 @@ public class SecurityConfig {
         .cors(cors -> cors.configurationSource(request -> {
             var corsConfig = new org.springframework.web.cors.CorsConfiguration();
             
-            corsConfig.setAllowedOrigins(List.of("http://localhost:9090","http://192.168.0.103:9090","http://172.31.3.232","http://leap-agency.me")); // Allow Flutter web origin
+            //corsConfig.setAllowedOrigins(List.of("http://localhost:9090"))); // Allow Flutter web origin
             corsConfig.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
             corsConfig.setAllowedHeaders(List.of("*"));
             corsConfig.setAllowCredentials(true);
